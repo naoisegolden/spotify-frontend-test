@@ -1,33 +1,39 @@
 <!doctype html>
-<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
 <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
 <!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
-<!-- Consider adding a manifest.appcache: h5bp.com/d/Offline -->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 <head>
+
+  <title>Spotify Premium 7-day trial</title>
+  
   <meta charset="utf-8">
-
-  <!-- Use the .htaccess and remove these lines to avoid edge case issues.
-       More info: h5bp.com/b/378 -->
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-
-  <title></title>
-  <meta name="description" content="">
-  <meta name="author" content="">
+  <meta name="description" content="Spotify is a digital music service that gives you access to millions of songs.">
+  <meta name="author" content="Naoise Golden Santos">
+  <meta name="keywords" content="Spotify, music, online, listen, streaming, play, digital, album, artist, playlist">
+  <meta name="robots" content="index" />
+  <meta property="og:title" content="Spotify Premium - Mobile Music - Online Music - Download and Listen - Spotify">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="http://www.spotify.com/get-spotify/premium/"><!-- my guess -->
+  <meta property="og:image" content="apple-touch-icon.png">
+  <meta property="og:description" content="Spotify is a digital music service that gives you access to millions of songs.">
+  <link rel="canonical" href="" /><!-- missing -->
+  <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml" /><!-- missing TO DO: build it! -->
+  <link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="57x57" href="apple-touch-icon-57x57-precomposed.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon-72x72-precomposed.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="apple-touch-icon-114x114-precomposed.png">
+  <link rel="dns-prefetch" href="//ajax.googleapis.com" /><!-- this speeds up things in case we grab Google CDN's jQuery -->
 
   <!-- Mobile viewport optimized: j.mp/bplateviewport -->
   <meta name="viewport" content="width=device-width,initial-scale=1">
-
-  <!-- Place favicon.ico and apple-touch-icon.png in the root directory: mathiasbynens.be/notes/touch-icons -->
-
+  
+  <!-- css -->
   <link rel="stylesheet" href="css/style.css">
   
-  <!-- More ideas for your <head> here: h5bp.com/d/head-Tips -->
-
-  <!-- All JavaScript at the bottom, except this Modernizr build incl. Respond.js
-       Respond is a polyfill for min/max-width media queries. Modernizr enables HTML5 elements & feature detects; 
-       for optimal performance, create your own custom Modernizr build: www.modernizr.com/download/ -->
+  <!-- All JavaScript at the bottom, except this Modernizr build incl. Respond.js -->
   <script src="js/libs/modernizr-2.0.6.min.js"></script>
 </head>
 
@@ -35,12 +41,13 @@
 
   <div id="container">
     <header>
-
+		<!-- really nothing in here -->
+		<nav role="navigation"><!-- the menu would be here --></nav>
     </header>
     <div id="main" role="main">
 
     </div>
-    <footer>
+    <footer role="complementary">
 
     </footer>
   </div> <!--! end of #container -->
@@ -52,24 +59,14 @@
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.3/jquery.min.js"></script>
   <script>window.jQuery || document.write('<script src="js/libs/jquery-1.6.3.min.js"><\/script>')</script>
 
-
-  <!-- scripts concatenated and minified via build script -->
+  <!-- scripts --><!-- TO DO: concatenate and minify -->
   <script defer src="js/plugins.js"></script>
   <script defer src="js/script.js"></script>
   <!-- end scripts -->
 
-
-  <!-- Asynchronous Google Analytics snippet. Change UA-XXXXX-X to be your site's ID.
-       mathiasbynens.be/notes/async-analytics-snippet -->
-  <script>
-    var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview'],['_trackPageLoadTime']];
-    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-    g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-    s.parentNode.insertBefore(g,s)}(document,'script'));
-  </script>
-
   <!-- Prompt IE 6 users to install Chrome Frame. Remove this if you want to support IE 6.
        chromium.org/developers/how-tos/chrome-frame-getting-started -->
+  <!-- I would prompt a death threat -->
   <!--[if lt IE 7 ]>
     <script defer src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
     <script defer>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>

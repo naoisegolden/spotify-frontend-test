@@ -1,11 +1,5 @@
 /*
- * HTML5 ✰ Boilerplate
- *
- * What follows is the result of much research on cross-browser styling.
- * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
- * Kroc Camen, and the H5BP dev community and team.
- *
- * Detailed information about this CSS: h5bp.com/css
+ * This is a fork of HTML5 ✰ Boilerplate for Spotify's Frontend Test
  *
  * ==|== normalize ==========================================================
  */
@@ -209,7 +203,7 @@ td { vertical-align: top; }
 
 
 /* ==|== primary styles =====================================================
-   Author:
+   Author: Naoise Golden Santos (naoise.golden@gmail.com)
    ========================================================================== */
 
 
@@ -230,7 +224,6 @@ td { vertical-align: top; }
 /* ==|== media queries ======================================================
    PLACEHOLDER Media Queries for Responsive Design.
    These override the primary ('mobile first') styles
-   Modify as content requires.
    ========================================================================== */
 
 @media only screen and (min-width: 480px) {
