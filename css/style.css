@@ -207,7 +207,11 @@ td { vertical-align: top; }
    ========================================================================== */
 
 
+#content #title {
+	/* it would be cool to have the 'SpotifyLagom bold' font */
+}
 
+.puff { height: 325px; }
 
 
 
