@@ -4,34 +4,32 @@ Author: Naoise Golden Santos
 Mail: naoise.golden@gmail.com
 
 Start: 	2011-09-13 23:00 GMT+1
-End: 	2011-09-14 XX:XX GMT+1
+Stop: 	2011-09-14 05:00 GMT+1
 
------------ Frontend Test instructions - Start -----------
+===
 
-## Create a single html file based on the attached PSD.
+Create a single html file based on the attached PSD.
 
-## Markup
+### Markup
 * Document markup should be well-formed and SEO-friendly. Use HTML5 where applicable.
 
-## Styling
+### Styling
 * CSS trickery is fine, but should degrade gracefully in older browsers.
 
-## Interaction
+### Interaction
 * The button in the billboard should show a form to sign up to Spotify Premium.
 * This doesn't have to be the entire signup form, but should contain some kind of client-side validation.
 * How the form appears/looks etc is up to you. Be creative!
 * You can use a framework of choice.
 
-## General
+### General
 * The page should be compatible with all major browsers (chrome, safari, firefox, opera, internet explorer 7+)
 
 Looking forward to see what you cook up!
 
-- Spotify web team
- 
------------ Frontend Test instructions - End -------------
+Spotify web team
 
-
+===
 
 This is an original fork of [HTML5 Boilerplate](http://html5boilerplate.com) boiled down to the basics.
 
@@ -55,4 +53,6 @@ Because the following is included:
 14. iOS, Android, Opera Mobile-adaptable markup and CSS skeleton.
 15. IE6 pngfix baked in.
 16. jQuery, waiting for you
+
+17. Because I only have a couple of hours!
 
