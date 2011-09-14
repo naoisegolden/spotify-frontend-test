@@ -206,9 +206,154 @@ td { vertical-align: top; }
    Author: Naoise Golden Santos (naoise.golden@gmail.com)
    ========================================================================== */
 
+body { 
+	font-family: helvetica, arial sans-serif; /* http://meiert.com/en/blog/20080220/helvetica-arial/ */
+}
+
+a { text-decoration: none; }
+a:focus, a:hover { text-decoration: underline; }
+
+#container {
+	width: 980px;
+	margin: 0 auto;
+}
+
+header {
+	background-color: #8dcf3e;
+	background-image: -webkit-gradient(
+	    linear,
+	    left bottom,
+	    left top,
+	    color-stop(0.32, rgb(97,163,27)),
+	    color-stop(1, rgb(142,207,62))
+	);
+	background-image: -moz-linear-gradient(
+	    center bottom,
+	    rgb(97,163,27) 32%,
+	    rgb(142,207,62) 100%
+	);
+	/* TO DO: fallback for legacy browsers */
+	-moz-border-radius: 10px 10px 0 0;
+    -webkit-border-radius: 10px 10px 0 0;
+    -khtml-border-radius: 10px 10px 0 0;
+    border-radius: 10px 10px 0 0;
+	margin-top: 130px;
+	height: 50px;
+	
+}
+
+html.no-borderradius header {
+    behavior: url(css/border-radius.htc); 
+    border-radius: 10px 10px 0 0;
+    /* TO DO: Opera? */
+}	
+
+header .logo {
+	background: url(../img/spotify-logo-102x39.png) no-repeat 0 0 transparent;
+	display: block;
+	position: relative;
+	width: 102px;
+	height: 39px;
+	text-indent: -9999px;
+	margin-left: 20px;
+	margin-top: 5px;
+	position: absolute;
+}
+
+#billboard {
+	background: url(../img/bg-billboard.jpg) no-repeat 0 0 #8dcf3e;
+	-moz-border-radius: 0 0 10px 10px;
+    -webkit-border-radius: 0 0 10px 10px;
+    -khtml-border-radius: 0 0 10px 10px;
+    border-radius: 0 0 10px 10px;
+    height: 242px;
+    padding-left: 45px;
+    padding-top: 115px;
+    position: relative; /* for .button's absolut reference */
+}
+
+html.no-borderradius #billboard {
+    behavior: url(css/border-radius.htc); 
+    border-radius: 0 0 10px 10px;
+    /* TO DO: Opera? */
+}	
+
+#billboard h2 {
+	/* it would be cool to have the 'Akkurat bold' font 
+	   http://lineto.com/The+Fonts/Font+Categories/Text+Fonts/Akkurat/ */
+	text-indent: -9999px;
+	margin: 0;
+}
+
+#billboard .info {
+	font-size: 14px;
+	line-height: 24px;
+	color: #ffffff;
+	width: 425px;
+}
+
+#billboard .button {
+	background-color: #eeeeee;
+	background-image: -webkit-gradient(
+	    linear,
+	    left bottom,
+	    left top,
+	    color-stop(0.32, rgba(0,0,0,0.14)),
+	    color-stop(1, rgba(255,255,255,0.14))
+	);
+	background-image: -moz-linear-gradient(
+	    center bottom,
+	    rgba(0,0,0,0.14) 32%,
+	    rgba(255,255,255,0.14) 100%
+	);
+	/* TO DO: fallback for legacy browsers */
+	-moz-border-radius: 27px;
+    -webkit-border-radius: 27px;
+    -khtml-border-radius: 27px;
+    border-radius: 27px;
+    
+    -moz-box-shadow: 0 0 8px rgba(0,0,0,0.2);
+	-webkit-box-shadow: 0 0 8px rgba(0,0,0,0.2);
+	box-shadow: 0 0 8px rgba(0,0,0,0.2);
+	/* TO DO: fallback for legacy browsers */
+    
+    text-shadow: 1px 1px rgba(255,255,255,0.65);
+	/* TO DO: fallback for legacy browsers */
+	
+	height: 55px;
+	width: 375px;
+	display: block;
+	text-align: center;
+	font: normal bold 22px/55px helvetica, arial, sans-serif;
+	color: #3e3e3e;
+	position: absolute;
+	bottom: 50px;
+	
+	/* TO DO: hover effect */
+}
+
+html.no-borderradius #billboard .button {
+    behavior: url(css/border-radius.htc); 
+    border-radius: 27px;
+    /* TO DO: Opera? */
+}
+
+#billboard a.button:focus,
+#billboard a.button:hover {
+	text-decoration: none;
+	background-color: #ffffff;	
+}
+
+html.cssanimations #billboard a.button {
+	-webkit-transition: all 0.5s ease-in-out; 
+	-moz-transition: all 0.5s ease-in-out; 
+	-o-transition: all 0.5s ease-in-out; 
+	transition: all 0.5s ease-in-out;
+}
 
 #content #title {
-	/* it would be cool to have the 'SpotifyLagom bold' font */
+	/* it would be cool to have the 'SpotifyLagom bold' font 
+	   http://cargocollective.com/kajandcarl#639120/Spotify-Lagom  */
 }
 
 .puff { height: 325px; }
