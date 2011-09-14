@@ -6,13 +6,13 @@ Mail: naoise.golden@gmail.com
 
 Start: 	2011-09-13 23:00 GMT+1
 
-Stop: 	2011-09-14 05:00 GMT+1
+End: 2011-09-14 16:00 GMT+1
 
-Restart: 2011-09-14 11:45 GMT+1
+Sleep: 5 hours
 
-End: 2011-09-14 XX:XX GMT+1
+Busy: 4 hours
 
-Total time: 6 hours
+Total developing time: 8 hours
 
 ===
 
