@@ -261,7 +261,7 @@ header .logo {
 }
 
 #billboard {
-	background: url(../img/bg-billboard.jpg) no-repeat 0 0 #8dcf3e;
+	background: url(../img/bg-billboard.jpg) no-repeat 0 0 #8dcf3e; /* I preffer jpg because it's 1/3 the size of the png */
 	-moz-border-radius: 0 0 10px 10px;
     -webkit-border-radius: 0 0 10px 10px;
     -khtml-border-radius: 0 0 10px 10px;
@@ -351,21 +351,93 @@ html.cssanimations #billboard a.button {
 	transition: all 0.5s ease-in-out;
 }
 
-#content #title {
+#content .title {
 	/* it would be cool to have the 'SpotifyLagom bold' font 
 	   http://cargocollective.com/kajandcarl#639120/Spotify-Lagom  */
+	font: normal bold 35px/93px 'SpotifyLagom', helvetica, arial, sans-serif;
+	text-align: center;
+	height: 93px;
+	background: url(../img/title-text.png) no-repeat center center transparent;
+	text-indent: -9999px;
+}
+#content .title strong {
+	font-style: normal;
+	color: #76b435;
 }
 
-.puff { height: 325px; }
+/* designer didn't use an explicit grid-system, pitty */
+.puffs {
+	padding: 0 20px;
+}
+.puff { 
+	height: 325px; 
+	width: 260px;
+	float: left;
+	margin-right: 80px;
+}
+.puff.last { margin-right: 0; }
 
+/* if images were done by layers, this could be prettier:
+   The images could be one sprite and I could apply border by css 
+   and re-use a png of the shadow, also apply the ribbon with a png 
+   to class 'premium' puffs  */
 
+.mini-banner {
+	width: 260px;
+	height: 140px;
+	overflow: visible;
+}
+.mini-banner a {
+	display: block;
+	width: 100%;
+}
 
+#puff-1 img { margin-left: 1px; }
+#puff-2 img { margin-left: -1px; }
+#puff-3 img { margin-left: -2px; }
+#puff-4 img { margin-left: -13px; margin-top: -11px; }
+#puff-5 img { margin-left: -19px; margin-top: -11px; }
+#puff-6 img { margin-left: -7px; margin-top: -5px; }
 
+.puff h3, .puff p { margin: 0; }
 
+.puff h3 {
+	font-size: 18px;
+	line-height: 18px;
+	color: #7ab800;
+}
 
+.puff p {
+	font-size: 15px;
+	line-height: 22px;
+	font-family: arial, sans-serif;
+	color: #333;
+	letter-spacing: -0.02em;
+}
 
+.puff a.more {
+	font-family: arial, sans-serif;
+	font-size: 15px;
+	line-height: 20px;
+	color: #19456d;
+	font-weight: bold;
+}
 
+footer {
+	clear: both;
+    padding: 30px 0;
+}
+footer .terms small {
+	color: #b4b3b3;
+	letter-spacing: -0.03em;
+}
 
+footer .copyright {
+	color: #c2c2c2;
+	font-size: 12px;
+	text-align: center;
+	letter-spacing: -0.025em;
+}
 
 
 
