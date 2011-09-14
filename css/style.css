@@ -232,7 +232,7 @@ header {
 	    rgb(97,163,27) 32%,
 	    rgb(142,207,62) 100%
 	);
-	/* TO DO: fallback for legacy browsers */
+	
 	-moz-border-radius: 10px 10px 0 0;
     -webkit-border-radius: 10px 10px 0 0;
     -khtml-border-radius: 10px 10px 0 0;
@@ -242,10 +242,9 @@ header {
 	
 }
 
-html.no-borderradius header {
-    behavior: url(css/border-radius.htc); 
-    border-radius: 10px 10px 0 0;
-    /* TO DO: Opera? */
+html.oldie header,
+html.no-cssgradients header {
+    /* TO DO use image */
 }	
 
 header .logo {
@@ -272,10 +271,9 @@ header .logo {
     position: relative; /* for .button's absolut reference */
 }
 
+html.oldie #billboard,
 html.no-borderradius #billboard {
-    behavior: url(css/border-radius.htc); 
-    border-radius: 0 0 10px 10px;
-    /* TO DO: Opera? */
+    /* leave as is, background has rounded corner */
 }	
 
 #billboard h2 {
@@ -306,7 +304,7 @@ html.no-borderradius #billboard {
 	    rgba(0,0,0,0.14) 32%,
 	    rgba(255,255,255,0.14) 100%
 	);
-	/* TO DO: fallback for legacy browsers */
+	
 	-moz-border-radius: 27px;
     -webkit-border-radius: 27px;
     -khtml-border-radius: 27px;
@@ -315,10 +313,8 @@ html.no-borderradius #billboard {
     -moz-box-shadow: 0 0 8px rgba(0,0,0,0.2);
 	-webkit-box-shadow: 0 0 8px rgba(0,0,0,0.2);
 	box-shadow: 0 0 8px rgba(0,0,0,0.2);
-	/* TO DO: fallback for legacy browsers */
     
     text-shadow: 1px 1px rgba(255,255,255,0.65);
-	/* TO DO: fallback for legacy browsers */
 	
 	height: 55px;
 	width: 375px;
@@ -328,14 +324,16 @@ html.no-borderradius #billboard {
 	color: #3e3e3e;
 	position: absolute;
 	bottom: 50px;
-	
-	/* TO DO: hover effect */
 }
 
+html.oldie #billboard .button,
 html.no-borderradius #billboard .button {
     behavior: url(css/border-radius.htc); 
     border-radius: 27px;
-    /* TO DO: Opera? */
+}
+html.oldie #billboard .button,
+html.no-cssgradients #billboard .button {
+    /* TO DO: use background-image */
 }
 
 #billboard a.button:focus,
@@ -438,6 +436,79 @@ footer .copyright {
 	text-align: center;
 	letter-spacing: -0.025em;
 }
+
+/* form */
+#register {
+    bottom: 0;
+    position: absolute;
+}
+
+form {
+	font: normal normal 14px/18px helvetica, arial, sans-serif;
+}
+
+label, .testresult {
+	color: #fff;
+	display: inline-block;
+	vertical-align: text-top;
+    width: 120px;
+    text-shadow: -1px -1px 0 #000000;
+    text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.5);
+}
+.testresult, label.error {
+	color: lightPink;
+	width: auto;
+	margin-left: 6px;
+}
+
+form fieldset ol {
+  margin: 0;
+  padding: 0;
+}
+form fieldset li {
+  list-style: none;
+  padding: 2px 0;
+  margin: 0;
+}
+
+input::-webkit-input-placeholder {
+    color:    rgba(0,0,0,0.2);
+}
+input:-moz-placeholder {
+    color:    rgba(0,0,0,0.2);
+}
+
+.shortPass{
+	color: lightPink;
+}
+.badPass{
+	color: lightPink;
+}
+.goodPass{
+	color: yellow;
+}
+.strongPass{
+	color: lime;
+}
+
+#billboard input.button {
+    border: medium none;
+    bottom: auto;
+    font-size: 14px;
+    height: 26px;
+    position: relative;
+    margin: 5px 0 7px 0;
+}
+html.oldie #billboard input.button,
+html.no-cssgradients .button {
+    behavior: url(css/border-radius.htc); 
+    border-radius: 27px;
+    /* TO DO: use background-image */
+}
+
+/* TO DO: 
+    - arreglar varios textos
+*/
 
 
 

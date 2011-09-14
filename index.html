@@ -49,7 +49,28 @@
 			<h2>Spotify Premium 7-day trial</h2>
 			<p class="info">Your Spotify Premium 7 day free trial will give you access to the full spotify 
 			experience without commitment, you can cancel at any time.*</p>
-			<a class="button" href="#">Try Spotify Premium for free »</a>
+			<a id="register-button" class="button" href="#register">Try Spotify Premium for free »</a>
+			<div id="register" style="display:none;">
+				<form id="register-form" novalidate ><!-- validation is done with jQuery validation plugin -->
+					<fieldset>
+						<ol>
+							<li>
+								<label for="email">Insert email</label>
+								<input type="text" name="email" id="email" placeholder="me@example.com" autofocus ><!-- using type="email" screws validate styles -->
+							</li>
+							<li>
+								<label for="password">Insert password</label>
+								<input type="password" name="password" id="password">
+							</li>
+							<li>
+								<label for="c_password">Repeat password</label>
+								<input type="password" name="c_password">
+							</li>
+						</ol>
+					</fieldset>
+					<input type="submit" value="Next »" class="button">
+				</form>
+			</div><!-- /#register -->
 		</div><!-- /#billboard -->
 		<div id="content">
 			<div class="title" role="banner">Just a few of <strong>Spotify's</strong> amazing features</div><!-- it would be cool to have the 'SpotifyLagom bold' font -->
@@ -94,7 +115,7 @@
 		</div><!-- /#content -->
     </div><!-- /#main -->
     <footer role="complementary">
-    	<p class="terms"><small><strong>Terms & Conditions</strong> This Agreement together with the Spotify Privacy Policy, the Mobile Terms (if applicable) and the Premium Code Terms (if applicable) constitutes all the terms and conditions agreed upon between you and Spotify and supersede any prior agreements, whether written or oral. Any additional or different terms or conditions in any written or oral communication from you to Spotify are void.</small></p>
+    	<p class="terms"><small><strong>Terms &amp; Conditions</strong> This Agreement together with the Spotify Privacy Policy, the Mobile Terms (if applicable) and the Premium Code Terms (if applicable) constitutes all the terms and conditions agreed upon between you and Spotify and supersede any prior agreements, whether written or oral. Any additional or different terms or conditions in any written or oral communication from you to Spotify are void.</small></p>
 		<p class="copyright">Copyright &copy; 2007-2010 Spotify Ltd</p>
     </footer>
   </div> <!--! end of #container -->

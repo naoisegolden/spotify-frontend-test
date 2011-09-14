@@ -1,10 +1,18 @@
 # Spotify Frontend Test 
 
 Author: Naoise Golden Santos
+
 Mail: naoise.golden@gmail.com
 
 Start: 	2011-09-13 23:00 GMT+1
+
 Stop: 	2011-09-14 05:00 GMT+1
+
+Restart: 2011-09-14 11:45 GMT+1
+
+End: 2011-09-14 XX:XX GMT+1
+
+Total time: 6 hours
 
 ===
 
@@ -33,7 +41,7 @@ Spotify web team
 
 This is an original fork of [HTML5 Boilerplate](http://html5boilerplate.com) boiled down to the basics.
 
-## Why?:
+### Why?:
 
 Because the following is included:
 
